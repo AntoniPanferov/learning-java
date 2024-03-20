@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e8bfb09-b29f-45af-8ba3-e53f7773590d" name="Changes" comment="" />
+    <list default="true" id="0e8bfb09-b29f-45af-8ba3-e53f7773590d" name="Changes" comment="linear data structures">
+      <change beforePath="$PROJECT_DIR$/LinearDataStructures/Queue/Task1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LinearDataStructures/Queue/Queue.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2Yqr6hvTZSWMSWUIdYS49bTqrqI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -22,7 +30,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/panan/IdeaProjects/learning-java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,6 +45,19 @@
       <option name="presentableId" value="Default" />
       <updated>1701263777808</updated>
     </task>
+    <task id="LOCAL-00001" summary="linear data structures">
+      <option name="closed" value="true" />
+      <created>1709716425465</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709716425465</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="linear data structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="linear data structures" />
   </component>
 </project>
