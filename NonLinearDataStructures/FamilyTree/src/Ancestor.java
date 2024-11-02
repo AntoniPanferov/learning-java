@@ -1,4 +1,1 @@
-package PACKAGE_NAME;
-
-public class Ancestor {
-}
+public record Ancestor(String firstName, String surname, Sex sex) {}

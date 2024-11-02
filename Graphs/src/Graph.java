@@ -8,9 +8,7 @@ import java.util.List;
  * Der Graph besteht aus Knoten, die Objekte der Klasse GraphNode sind, 
  * und Kanten, die Knoten miteinander verbinden. 
  * Die Knoten werden ueber ihren Namen eindeutig identifiziert.</p>
- * 
- * 
- * 
+ *
  * @version 2016-11-28
  */
 public class Graph {
@@ -93,7 +91,6 @@ public class Graph {
    * Sonst wird der Graph nicht veraendert.
    * @param pNode Knoten
    */   
- 
 
   public void removeNode(GraphNode pNode) {
 	  if (pNode != null) {
@@ -166,9 +163,6 @@ public class Graph {
     return result;             
   }
 
- 
-  
-  
   /**
    * Falls pNode1 und pNode2 nicht null sind und eine Kante zwischen 
    * pNode1 und pNode2 existiert, wird die Kante geloescht. Sonst 
@@ -202,12 +196,10 @@ public class Graph {
    * Alle Knoten des Graphen werden als unmarkiert gekennzeichnet.
    */
   public void resetMarks() {
-    
 	  for (GraphNode gn : nodeList) {
 		  gn.unmark();
 	  }
-
-  }    
+  }
 
   /**
    * Die Anfrage liefert den Wert true, wenn alle Knoten des Graphen 
@@ -216,7 +208,6 @@ public class Graph {
    */    
   public boolean allNodesMarked() {
     if (!nodeList.isEmpty()) {
-      
       boolean lAllMarked=true;
       
       for (GraphNode gn : nodeList) {
@@ -240,7 +231,6 @@ public class Graph {
     for (GraphNode gn : nodeList) {
 		  lList.add(gn);
 	  }
-      
     return lList;
   }
 
@@ -254,7 +244,4 @@ public class Graph {
     return pNode.getNeighbours_();
   }
 
-  
-  
-  
 }
