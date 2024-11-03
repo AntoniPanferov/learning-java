@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class Controller {
     private Model model;
     private View view;
@@ -7,8 +9,13 @@ public class Controller {
         this.view = view;
     }
 
-    public void save (String eMail) {
-        //validation logic
-        return;
+    public void save(String eMail) {
+        try {
+            model.setEMail(eMail);
+            model.save();
+            view.showSuccess("E-Mail was successfully saved.");
+        } catch (IOException e) {
+            view.showError("E-Mail was not saved.");
+        }
     }
 }

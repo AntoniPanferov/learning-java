@@ -8,6 +8,9 @@ public class View {
     private final Dimension frameSize = new Dimension(600, 200);
     private final JTextField txtInput = new JTextField(20);
     private final JLabel lblStatus = new JLabel();
+    private final int statusDelay = 3000;
+    private final Color red = new Color(208, 64, 64);
+    private final Color green = new Color(64, 208, 64);
 
     public View() {
         createFrame();
@@ -50,18 +53,27 @@ public class View {
     }
 
     public void saveButtonClicked() {
-
+        controller.save(txtInput.getText());
     }
 
     public void showError(String message) {
-
+        lblStatus.setForeground(red);
+        updateStatus(message);
     }
 
     public void showSuccess(String message) {
+        lblStatus.setForeground(green);
+        updateStatus(message);
+    }
 
+    private void updateStatus(String message) {
+        lblStatus.setText(message);
+        Timer timer = new Timer(statusDelay, e -> hideMessageBox());
+        timer.setRepeats(false);
+        timer.start();
     }
 
     public void hideMessageBox() {
-
+        lblStatus.setText("");
     }
 }
